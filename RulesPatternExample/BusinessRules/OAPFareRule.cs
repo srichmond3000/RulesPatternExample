@@ -9,7 +9,7 @@ namespace RulesPatternExample.BusinessRules
 
         public decimal Evaluate(Passenger passenger, DateTime journeyTime, decimal fare)
         {
-            decimal evaluatedFare = passenger.DateOfBirth.AddYears(60) >= DateTime.Now
+            decimal evaluatedFare = passenger.DateOfBirth.AddYears(60) <= DateTime.Now
                                              ? fare * 0.45m
                                              : fare;
 

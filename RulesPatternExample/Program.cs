@@ -9,7 +9,8 @@ namespace RulesPatternExample
         {
             FareRuleEngineBuilder ruleEngineBuilder = new FareRuleEngineBuilder();
             FareRuleEngine ruleEngine = ruleEngineBuilder
-                .WithOAPRule().WithStudentRule()
+                .WithOAPRule()
+                .WithStudentRule()
                 .WithPeakRule(TimeSpan.FromHours(7.5), TimeSpan.FromHours(9.0))
                 .Build();
             Passenger passenger = GetPassenger();

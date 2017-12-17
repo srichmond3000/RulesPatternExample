@@ -9,8 +9,4 @@
     <Folder Include="BusinessRules\" />
     <Folder Include="Tests\" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
-    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
-  </ItemGroup>
 </Project>
